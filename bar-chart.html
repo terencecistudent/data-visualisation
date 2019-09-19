@@ -11,6 +11,7 @@
 <body>
     <h1>D3 Charting</h1>
 
+
     <div id="draw-here"></div>
 
 
@@ -20,13 +21,13 @@
     var h = 500;
     var barPadding = 1;
     var dataset = [
-        450, 100, 100, 1600, 500, 25, 350, 120, 80, 130,
+        450, 100, 100, 600, 500, 25, 350, 120, 80, 130,
         110, 102, 375, 200, 175, 168, 180, 230, 205,
     ];
 
     var scale = d3.scale.linear()
                         .domain([0, d3.max(dataset)])
-                        .range([0, 500]);
+                        .range([0, h]);
 
     var colWidth = w / dataset.length;
     var barWidth = colWidth - barPadding;
